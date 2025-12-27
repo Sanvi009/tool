@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToolHub - Your Tool Directory</title>
+    <style>
+        /* RESET & BASE STYLES */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background-color: #ffffff;
+            color: #1f2937;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* TOP BAR */
+        .top-bar {
+            width: 100%;
+            height: 70px;
+            background-color: #e2e8f0; /* Lower color: Slate-200 */
+            border-bottom: 1px solid #cbd5e1; /* Slightly darker border */
+            display: flex;
+            align-items: center;
+            padding: 0 28px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        /* LOGO AREA */
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-icon {
+            width: 36px;
+            height: 36px;
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .logo-text {
+            font-size: 24px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #1f2937, #374151);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* MAIN CONTENT AREA - EMPTY WHITE */
+        .main-content {
+            flex: 1;
+            background-color: #ffffff;
+            /* Empty white space as requested */
+        }
+
+        /* SIMPLE FOOTER (Optional) */
+        .footer {
+            height: 60px;
+            border-top: 1px solid #e5e7eb;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #6b7280;
+            font-size: 14px;
+            background-color: #f9fafb;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .top-bar {
+                height: 56px;
+                padding: 0 16px;
+            }
+
+            .logo-text {
+                font-size: 20px;
+            }
+
+            .logo-icon {
+                width: 32px;
+                height: 32px;
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo-text {
+                font-size: 18px;
+            }
+
+            .logo-icon {
+                width: 28px;
+                height: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- TOP BAR WITH LOGO -->
+    <header class="top-bar">
+        <div class="logo-container">
+            <div class="logo-icon">T</div>
+            <div class="logo-text">ToolHub</div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT AREA - EMPTY WHITE -->
+    <main class="main-content">
+        <!-- This area will be filled with categories, tools, etc. -->
+        <!-- Currently empty white space as requested -->
+    </main>
+
+    <!-- OPTIONAL SIMPLE FOOTER -->
+    <footer class="footer">
+        <span>© 2024 ToolHub. All tools belong to their respective owners.</span>
+    </footer>
+</body>
+</html>
